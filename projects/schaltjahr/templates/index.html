@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Schaltjahr-Programm</title>
+</head>
+<body>
+    <h1>Schaltjahr-Überprüfung</h1>
+
+    <!-- Formular für die Überprüfung eines einzelnen Jahres -->
+    <form action="/check_year" method="post">
+        <label for="year">Einzelnes Jahr überprüfen:</label>
+        <input type="number" id="year" name="year" required>
+        <input type="submit" value="Überprüfen">
+    </form>
+
+    <br>
+
+    <!-- Formular für die Überprüfung eines Zeitraums -->
+    <form action="/check_range" method="post">
+        <label for="startYear">Startjahr:</label>
+        <input type="number" id="startYear" name="startYear" required>
+        
+        <label for="endYear">Endjahr:</label>
+        <input type="number" id="endYear" name="endYear" required>
+        
+        <input type="submit" value="Zeitraum überprüfen">
+    </form>
+</body>
+</html>
