@@ -25,15 +25,15 @@ def hauptmenue():
         if auswahl == "1":
             jahr = int(input("Bitte geben Sie ein Jahr ein: "))
             if ist_schaltjahr(jahr):
-                print(f"{jahr} ist ein Schaltjahr.")
+                print(f"\n{jahr} ist ein Schaltjahr.")
             else:
-                print(f"{jahr} ist kein Schaltjahr.")
+                print(f"\n{jahr} ist kein Schaltjahr.")
         elif auswahl == "2":
             startjahr = int(input("Startjahr: "))
             endjahr = int(input("Endjahr: "))
             
             if startjahr > endjahr:
-                print("Das Startjahr muss vor dem Endjahr liegen.")
+                print("\nDas Startjahr muss vor dem Endjahr liegen.")
                 continue
         
             schaltjahre = finde_schaltjahre(startjahr, endjahr)
@@ -42,10 +42,10 @@ def hauptmenue():
             else:
                 print(f"\nEs gibt keine Schaltjahre zwischen {startjahr} und {endjahr}.")
         elif auswahl == "3":
-            print("Programm beendet.")
+            print("\nProgramm beendet.")
             break
         else:
-            print("Ungültige Auswahl. Bitte versuchen Sie es erneut.")
+            print("\nUngültige Auswahl. Bitte versuchen Sie es erneut.")
 
 # Hauptprogramm starten
 hauptmenue()
