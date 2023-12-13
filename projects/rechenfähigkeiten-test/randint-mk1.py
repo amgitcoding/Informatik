@@ -1,6 +1,6 @@
 from random import randint
 
-print('Teste deine Kopfrechenfähigkeiten!')
+print("Teste deine Kopfrechenfähigkeiten!")
 maximum = 20
 genug = False
 richtig = True
