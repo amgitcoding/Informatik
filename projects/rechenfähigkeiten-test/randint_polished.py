@@ -7,7 +7,7 @@ from random import randint
 print('Teste deine Kopfrechenfähigkeiten!')
 
 # Initialisierung (Zuweisung) der Variablen
-maximum = 20      # Obergrenze für die Zufallszahlen
+maximum = 20     # Obergrenze für die Zufallszahlen
 genug = False     # Variable, um zu überprüfen, ob der Benutzer aufhören möchte
 richtig = True    # Variable, um zu überprüfen, ob die letzte Antwort richtig war
 richtige_antworten = 0  # Zähler für richtige Antworten
